@@ -1,0 +1,11 @@
+pypdf
+sentence-transformers
+faiss-cpu
+rank_bm25
+transformers
+accelerate
+torch
+gradio
+pandas
+numpy
+matplotlib
