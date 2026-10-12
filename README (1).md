@@ -29,9 +29,10 @@ PDF -> text per page -> chunks (180 words, 40 overlap)
 ## Evaluation results
 | Method | Hit@1 | Hit@3 | Hit@5 | MRR |
 |---|---|---|---|---|
-| Dense | _fill_ | _fill_ | _fill_ | _fill_ |
-| BM25 | _fill_ | _fill_ | _fill_ | _fill_ |
-| Hybrid | _fill_ | _fill_ | _fill_ | _fill_ |
+dense	| 0.467 |	0.767 |	0.767	| 0.613 |
+bm25	| 0.400 |	0.633 |	0.633 |	0.517 |
+hybrid	| 0.467 |	0.667 |	0.767 |	0.586 |
+
 
 ![Retrieval evaluation](retrieval_eval.png)
 
