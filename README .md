@@ -33,6 +33,12 @@ dense	| 0.467 |	0.767 |	0.767	| 0.613 |
 bm25	| 0.400 |	0.633 |	0.633 |	0.517 |
 hybrid	| 0.467 |	0.667 |	0.767 |	0.586 |
 
+**Observations**
+- Dense retrieval performed best (MRR 0.613), followed by hybrid (0.586) and BM25 (0.517).
+- Hybrid (RRF) did not outperform dense retrieval on this document. A possible reason is that BM25 is weaker here and adds noise when fused with equal weight.
+- Evaluation used only 30 synthetic questions on a single PDF, so differences between methods are small and should not be over-interpreted.
+- Future work: weighted fusion, a cross-encoder reranker, and evaluation on multiple documents.
+
 
 ![Retrieval evaluation](retrieval_eval.png)
 
